@@ -1,0 +1,26 @@
+<h1>Estudiantes</h1>
+
+<table class="table">
+
+<thead>
+<tr>
+
+<th>Nombre</th>
+<th>Edad</th>
+<th>Email</th>
+</tr>
+</thead>
+
+<tbody>
+  <tr>
+<% @students.each do |s| %>
+
+<td> <%= s.name %> </td>
+<td> <%= s.age %> </td>
+<td> <%= s.email %> </td>
+</tr>
+<% end %>
+
+</tbody>
+
+</table>
